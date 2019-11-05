@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Corredores
+Route::get('/corredores', 'CorredoresController@index');
+Route::get('/corredores/nuevo', 'CorredoresController@formNuevo');
+Route::post('/corredores/nuevo', 'CorredoresController@crear');
