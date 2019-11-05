@@ -19,7 +19,7 @@ class CreateCorredoresTable extends Migration
             $table->string('apellido', 30);
             $table->dateTime('fecha_nac');
             $table->string('domicilio', 100);
-            $table->integer('dni', 8);
+            $table->integer('dni')->length(8);
             $table->string('email', 50);
             $table->string('telefono', 50);
             $table->string('comentarios', 140);
