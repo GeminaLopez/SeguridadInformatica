@@ -1,0 +1,398 @@
+body {
+    /*background: url(../imgs/fondo2.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    font-family: Roboto, Raleway, Tahoma;
+    color: white;
+    background: forestgreen;
+}
+
+header{
+    padding: 1em 13em;
+    margin: 0;
+}
+
+header h1{
+    /*background: url(../imgs/logo.png) center no-repeat;*/
+    /*height: 86px;*/
+    font-size: 5em;
+    margin: auto 0;
+    /*font-size: 3em;
+    margin: auto;
+    width: 900px;*/
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 0;
+}
+
+.nav-item{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.navbar-nav{
+    padding: 5px;
+    text-align: center;
+}
+
+.nav-item > a:not(.cerrarSesion), .login{
+    width: 150px;
+    display: inline-block;
+    padding: 9px 15px;
+    transition: all 0.5s 0s;
+    color: white;
+    text-decoration: none;
+    border: 2px solid;
+    font-weight: bold;
+    background: darkslategrey;
+}
+
+
+.nav-item > a:not(.cerrarSesion)hover, .login:hover{
+    color: darkslategrey;
+    background: white;
+}
+/*
+.navbar-right .nav-item > a{
+    width: 116px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-left: 0;
+    text-transform: capitalize;
+}*/
+
+.dropdown-menu.show{
+    width: 100%;
+}
+
+.nav-link{
+    margin-left: 1em;
+}
+
+.main-content {
+    padding: 2em;
+    margin-bottom: 1em;
+    background: white;
+    width: 80%;
+    border: 1px solid #333333;
+    margin: auto;
+    border-radius: 25px;
+    color: darkslategrey;
+}
+
+.main-footer {
+    background: forestgreen;
+    width: 80%;
+    border: 2px solid white;
+    padding: 10px 30px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+#fantasmasTable td:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+td a.btn{
+    color:white;
+}
+
+h2{
+    font: bold 40px/40px Roboto;
+    /*padding-left: 5px;
+    padding-bottom: 7px;*/
+    padding: 0.4em;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 0 5px 0;
+    background: -moz-linear-gradient(top, forestgreen 0%, greenyellow 100%);
+    background: -webkit-linear-gradient(top, forestgreen 0%,greenyellow 100%);
+    background: linear-gradient(to bottom, forestgreen 0%,greenyellow 100%);
+    margin: 0 0 0.5em 0;
+    text-shadow: 0 0 5px black;
+    background: -moz-linear-gradient(top, forestgreen 0%, greenyellow 100%);
+    background: -webkit-linear-gradient(top, forestgreen 0%,greenyellow 100%);
+    background: linear-gradient(to bottom, forestgreen 0%,greenyellow 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='forestgreen', endColorstr='greenyellow',GradientType=0 );
+}
+
+h3{
+    font-size: 40px;
+    border-bottom: 2px solid limegreen;
+    text-align: center;
+    margin: 0;
+    line-height: 60px;
+    color: forestgreen;
+    margin-bottom: 1em;
+}
+
+#crear, #editar {
+    position: relative;
+    border: 2px solid lightslategray;
+    margin-top: 25px;
+    padding: 15px 31px;
+    border-radius: 25px;
+    font-size: .9em;
+    margin-bottom: 1em;
+}
+
+#agregarFantasma{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: block;
+    text-decoration: none;
+    color: darkslategrey;
+    width: 200px;
+}
+
+#agregarFantasma i{
+    color: forestgreen;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.btn.editar,.btn.borrar,.btn.detalle, .btn.restaurar{
+    padding: 0;
+}
+
+.editar i, .restaurar i{
+    font-size: 1.5em;
+    background-color: none;
+    vertical-align:middle;
+    color:forestgreen;
+}
+
+.borrar, .editar, .restaurar {
+    background-color: transparent;
+}
+
+.borrar i{
+    font-size: 1.5em;
+    background-color: none;
+    vertical-align:middle;
+    color:red;
+}
+
+.detalle i{
+    font-size: 1.5em;
+    background-color: none;
+    vertical-align:middle;
+    color:limegreen;
+}
+
+.home{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home > section img {
+    width: 100%;
+}
+
+.home section{
+    margin: 1em;
+}
+
+.carnet li {
+    display: inline-flex;
+    width: 23%;
+    margin: 0 5px;
+    flex-flow: column;
+}
+
+.carnet li h4{
+    margin-top: 1em;
+}
+
+.seccionHome section:nth-child(3) .carnet img {
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 12px;
+    border: 1px solid forestgreen;
+}
+
+.seccionHome p {
+    line-height: 23px;
+}
+
+.home section:nth-child(2) p,
+.home section:nth-child(3) p
+{
+    padding-top: 1em;
+}
+
+.carnet li img {
+    width: auto;
+}
+
+.carnet li p {
+    margin-top: -1em;
+}
+
+.equipamiento div {
+    float: left;
+    margin-right: -4em;
+    margin-bottom: .5em;
+}
+
+.equipamiento + h3 + article{
+    margin-top:0em;
+}
+
+.equipamiento article:not(:first-of-type){
+    margin-top:4em;
+}
+
+.equipamiento div img {
+    width: 80%;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle{
+    background-color: darkslategrey;
+    border: 2px solid white;
+    border-radius: initial;
+}
+
+/* estilo cards */
+
+.list{
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0;
+}
+
+.card{
+    overflow: hidden;
+    margin: 20px 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.list:last-child.card {
+    margin-bottom: 40px;
+}
+
+.card .item:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.card .item:first-child {
+    border-top: 0;
+}
+
+.card .item {
+    margin-right: 0;
+    margin-left: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.item {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    padding: 16px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+}
+
+.item-avatar {
+    padding-left: 72px;
+    min-height: 72px;
+}
+
+.item-avatar > img:first-child{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.item-avatar form{
+    display: inline-block;
+    float: right;
+    top: -1.7em;
+    position: relative;
+}
+
+.item-avatar h5, .item p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.item p:last-child {
+    margin-bottom: 0;
+}
+
+.item-body {
+    overflow: auto;
+    padding: 16px;
+    text-overflow: inherit;
+    white-space: normal;
+}
+
+.espectros{
+    padding: 1em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.espectros div {
+    padding: 1em 0;
+}
+
+.espectros div img{
+    display: block;
+}
+
+.espectros div a{
+    padding: 1em 0;
+    color: forestgreen;
+    font-weight: bold;
+    display: block;
+    font-size: 1.1em;
+}
+
+/* fin estilo cards*/

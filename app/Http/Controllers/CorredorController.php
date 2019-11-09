@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Equipo;
 use App\Models\Nacionalidad;
+use App\Models\Provincia;
+use App\Models\Ciudad;
 use App\Models\Corredor;
 use Illuminate\Http\Request;
+
 
 class CorredorController extends Controller
 {
@@ -14,13 +17,9 @@ class CorredorController extends Controller
      */
     public function index()
     {
-        $corredores = Corredor::with(['equipos'])
-                                ->with(['nacionalidades'])
-                                ->with(['provincias'])
-                                ->with(['ciudades'])
-                                ->get();
+        $corredores = Corredor::with(['equipos'])->get();
         // retorno la vista
-        return view('corredores.index', compact('corredores'));
+        return view('corredor.index', compact('corredores'));
     }
 
     /**
@@ -34,7 +33,7 @@ class CorredorController extends Controller
         $nacionalidades = Nacionalidad::all();
         $ciudades = Ciudad::all();
         $provincias = Provincia::all();
-        return view('corredores.form-nuevo', compact('equipos', 'nacionalidades', 'ciudades','provincias'));
+        return view('corredor.form-nuevo', compact('equipos', 'nacionalidades', 'ciudades','provincias'));
     }
 
     /**
@@ -54,7 +53,7 @@ class CorredorController extends Controller
         // Graba en la BD
         Corredor::create($data);
 
-        return redirect(url('/corredor'))
-            ->with('message', 'El corredor fue creado con éxito.');
+        return redirect(url('/corredores'))
+                ->with('message', '¡Gracias por inscribirte! Aquí podes validar el número de corredor asignado');
     }
 }

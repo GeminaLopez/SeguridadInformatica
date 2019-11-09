@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 // Corredores
-Route::get('/corredores', 'CorredoresController@index');
-Route::get('/corredores/nuevo', 'CorredoresController@formNuevo');
-Route::post('/corredores/nuevo', 'CorredoresController@crear');
+Route::get('/corredores', 'CorredorController@index');
+Route::get('/corredor/nuevo', 'CorredorController@formNuevo');
+Route::post('/corredor/nuevo', 'CorredorController@crear');

@@ -23,6 +23,7 @@ class CreateCorredoresTable extends Migration
             $table->string('email', 50);
             $table->string('telefono', 50);
             $table->string('comentarios', 140);
+            $table->string('como_me_entere', 140);
             // relaciones
             $table->unsignedInteger('id_equipo');
             $table->foreign('id_equipo')->references('id_equipo')->on('equipos');
